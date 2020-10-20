@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Estefania GJ | Maquetadora Web - Portfolio</title>
+	<meta name="description" content="Estefania GJ | Maquetadora Web - Portfolio" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/icons-font.css" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137053997-1"></script>
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-137053997-1');
+	</script>
+
+	<script>
+	/* Author Jeremy, code: https://codepen.io/J-Roel/pen/MpwLGx */
+		(function( $ ) {
+			'use strict';
+
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html, body').animate({
+								scrollTop: target.offset().top + 5
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		}(jQuery));
+	</script>
+</head>
+<body>
+	<header>
+		<h1 id="logo">
+			<img src="images/bg-logo.jpg" alt="Logo del portfolio de Estefania GJ">
+			<span class="short-name">EGJ</span>
+		</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="#skills" title="Skills" class="active">Skills</a>
+				</li>
+				<li>
+					<a href="#portfolio-ui" title="Portfolio Maquetación">Maquetación</a>
+				</li>
+				<li>
+					<a href="#portfolio-ux" title="Portfolio UX">UX</a>
+				</li>
+				<li>
+					<a href="#ecommerce" title="Ecommerce">Ecommerce</a>
+				</li>
+				<li>
+					<a href="#more" title="Conóceme">¡Conóceme!</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="resume" class="resume-wrapper">
+			<div class="container">
+				<h2 class="resume-wrapper__title">Hola, me llamo Estefanía. Soy Maquetadora Web.</h2>
+				<p class="resume-wrapper__subtitle">Empecé mi carrera de maquetación hace más de 8 años y me apasiona mi trabajo, me hace muy feliz. He trabajado para diferentes tipos de empresas y he colaborado con gente maravillosa para crear productos digitales de calidad.</p>
+				<picture id="avatar">
+					<img src="images/avatar.jpg" alt="Avatar">
+				</picture>
+				<picture class="devices-wrapper">
+					<img src="images/devices_desktop.svg" alt="Dispositivos de desarrollo">
+				</picture>
+			</div>
+		</section>
+
+		<section id="skills" class="skills-wrapper content-wrapper">
+			<div class="container">
+				<div class="intro-title">
+					<h2 class="primary-title">Skills</h2>
+					<p class="primary-description">Además del aprendizaje contínuo en Maquetación, estoy formándome en UX y diseño de interación. Estos son mis Skills:</p>
+				</div>
+				<div class="skills-wrapper rounded-content">
+					<div class="skills-row">
+						<div class="skills-content__item">
+							<h3 class="title">Hard Skills</h3>
+							<ul class="skills-list">
+								<li>Técnicas de desarrollo</li>
+								<li>Metodologías de trabajo</li>
+								<li>Documentación</li>
+								<li>Compilación automática</li>
+								<li>Tratamiento de imágenes</li>
+								<li>Accesibilidad Web</li>
+								<li>Responsive Design</li>
+								<li>Cross Browsing</li>
+								<li>GIT</li>
+								<li>Animación SVG</li>
+								<li>Idiomas: Inglés, básico</li>
+							</ul>
+						</div>
+						<div class="skills-content__item">
+							<h3 class="title">Soft Skills</h3>
+							<ul class="skills-list">
+								<li>Trabajo en Equipo</li>
+								<li>Responsabilidad</li>
+								<li>Comunicación</li>
+								<li>Organización</li>
+								<li>Empatía</li>
+								<li>Creatividad</li>
+								<li>Autonomía</li>
+							</ul>
+						</div>
+					</div>
+					<div class="skills-row">
+						<div class="skills-content__item">
+							<h3 class="title">Dev Tools</h3>
+							<ul class="skills-list">
+								<li>Atom</li>
+								<li>Webstorm</li>
+								<li>Visual Studio Code</li>
+								<li>Bitbucket</li>
+								<li>Bootstrap</li>
+								<li>Codepen</li>
+								<li>GitHub</li>
+								<li>Terminal</li>
+							</ul>
+						</div>
+						<div class="skills-content__item">
+							<h3 class="title">Design Tools</h3>
+							<ul class="skills-list">
+								<li>Photoshop</li>
+								<li>Sketch</li>
+								<li>Adobe XD</li>
+								<li>Invision</li>
+								<li>Supernova (*)</li>
+								<li>Webflow (*)</li>
+							</ul>
+						</div>
+						<div class="skills-content__item">
+							<h3 class="title">Lenguajes</h3>
+							<ul class="skills-list">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>SASS</li>
+								<li>JADE / PUG</li>
+								<li>Javacript, básico</li>
+							</ul>
+						</div>
+					</div>
+
+					<p>(*) Probando actualmente</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio-ui" class="portfolio-wrapper content-wrapper">
+			<div class="container">
+				<div class="intro-title">
+					<h2 class="primary-title">Portfolio - Maquetación</h2>
+					<p class="primary-description">Estos son algunos de los proyectos que he maquetado:</p>
+				</div>
+
+				<div class="projects-wrapper rounded-content">
+					<article class="projects-wrapper__item happinext">
+						<div class="projects-wrapper__item-content">
+							<h3 class="title">Happinext</h3>
+							<p class="company">BBVA Next Technologies</p>
+							<ul class="labels-list">
+								<li class="html">HTML 5</li>
+								<li class="css">CSS 3</li>
+								<li class="sass">SASS</li>
+								<li class="responsive">Responsive</li>
+								<li class="git">Github</li>
+							</ul>
+							<p>Aplicación para conocer el estado de ánimo y la opinión de los empleados de BBVA Next Technologies a través de una interfaz sencilla, limpia y amigable.</p>
+							<p>Proyecto desarrollado con React JS y maquetación responsive Mobile First con <b>HTML</b> y <b>SASS</b>. Cuenta con una vista para la votación del empleado y con un panel de administración para la gestión de las respuestas recibidas.</p>
+						</div>
+						<picture class="projects-wrapper__item-mockup">
+							<img src="images/projects/next-happinext.png" alt="Happinext, BBVA Next Technologies">
+						</picture>
+					</article>
+
+					<article class="projects-wrapper__item ninja">
+						<div class="projects-wrapper__item-content">
+							<h3 class="title">The Ninja Project</h3>
+							<p class="company">BBVA</p>
+							<ul class="labels-list">
+								<li class="html">HTML 5</li>
+								<li class="css">CSS 3</li>
+								<li class="sass">SASS</li>
+								<li class="responsive">Responsive</li>
+								<li class="git">Github</li>
+							</ul>
+							<p>Plataforma gamificada para fomentar la formación de los empleados de BBVA.</p>
+							<p>El proyecto se ha desarrollado con Angular JS y la maquetación responsive Mobile First con <b>Jade</b> y <b>SASS</b>.</p>
+						</div>
+						<picture class="projects-wrapper__item-mockup">
+							<img src="images/projects/next-theninjaproject.png" alt="The Ninja Project, BBVA">
+						</picture>
+					</article>
+
+					<article class="projects-wrapper__item sanitas">
+						<div class="projects-wrapper__item-content">
+							<h3 class="title">Sanitas</h3>
+							<p class="company">Sopra Steria</p>
+							<ul class="labels-list">
+								<li class="html">HTML 5</li>
+								<li class="css">CSS 3</li>
+								<li class="sass">SASS</li>
+								<li class="responsive">Responsive</li>
+								<li class="git">Github</li>
+							</ul>
+							<p>Zona privada del usuario y portal de contratación de los seguros de salud de Sanitas.</p>
+							<p>Desarrollado con Angular JS y maquetación responsive Mobile First con <b>Jade</b> y <b>SASS</b>.</p>
+						</div>
+						<picture class="projects-wrapper__item-mockup">
+							<img src="images/projects/sanitas-contratacion.png" alt="Sanitas, portal de contratación">
+						</picture>
+					</article>
+
+					<article class="projects-wrapper__item monteros">
+						<div class="projects-wrapper__item-content">
+							<h3 class="title">Los Monteros, Spa & Golf Resort</h3>
+							<p class="company">Mirai España, SL.</p>
+							<ul class="labels-list">
+								<li class="html">HTML 5</li>
+								<li class="css">CSS 3</li>
+								<li class="responsive">Responsive</li>
+							</ul>
+							<p>Web oficial de Los Monteros, Spa & Golf Resort.</p>
+							<p>Proyecto realizado con Wordpress Multisite Custom, maquetación responsive Desktop First con <b>HTML</b> y <b>CSS</b>.</p>
+						</div>
+						<picture class="projects-wrapper__item-mockup">
+							<img src="images/projects/mirai-monteros.png" alt="Monteros">
+						</picture>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio-ux" class="portfolio-wrapper content-wrapper">
+			<div class="container">
+				<div class="intro-title">
+					<h2 class="primary-title">Portfolio - UX</h2>
+					<p class="primary-description">También he trabajado haciendo wireframes y prototipado dinámico:</p>
+				</div>
+
+				<div class="projects-wrapper rounded-content">
+					<article class="projects-wrapper__item happinext">
+						<div class="projects-wrapper__item-content">
+							<h3 class="title">Happinext</h3>
+							<p class="company">BBVA Next Technologies</p>
+							<p>Diseño y prototipado dinámico con <b>Sketch</b> tanto para la aplicación de empleados como para el panel de administración (backoffice) para gestores.</p>
+							<ul class="list-link-icon">
+								<li>
+									<a href="https://sketch.cloud/s/VvmPK/52joqM8/play" class="link-icon" title="Ver prototipo de la aplicación" target="_blank">
+										<i class="icon icon-plan"></i>
+										<span>Ver prototipo de la aplicación</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<picture class="projects-wrapper__item-mockup">
+							<img src="images/projects/next-happinext-sketch.png" alt="Happinext, BBVA Next Technologies">
+						</picture>
+					</article>
+					<article class="projects-wrapper__item happinext">
+						<div class="projects-wrapper__item-content">
+							<h3 class="title">The Ninja Project v2.0</h3>
+							<p class="company">BBVA</p>
+							<p>Propuesta de rediseño con <b>Sketch</b> para la versión 2.0 de la aplicación.</p>
+							<p>En los <b>wireframes</b> presentados se incluye desarrollo heredado y nuevas propuestas con el fin de aportar al usuario nuevas funcionalidades.</p>
+						</div>
+						<picture class="projects-wrapper__item-mockup">
+							<img src="images/projects/next-theninjaproject-sketch.png" alt="The Ninja Project 2.0, BBVA">
+						</picture>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="ecommerce" class="ecommerce-wrapper content-wrapper">
+			<div class="container">
+				<div class="intro-title">
+					<h2 class="primary-title">Ecommerce</h2>
+					<p class="primary-description">Me encanta el ecommerce. He montado algunas tiendas online con Joomla + Virtuemart, Wordpress + Woocommerce y Prestashop. Me gusta probar diferentes CMS y plataformas montando tiendas desde cero, configurándolas y gestionándolas.</p>
+				</div>
+
+				<div class="projects-wrapper rounded-content">
+					<article class="projects-wrapper__item happinext">
+						<div class="projects-wrapper__item-content">
+							<h3 class="title">El Chico Llama</h3>
+							<p class="company">Prestashop</p>
+							<p>Gestión y configuración de la tienda online de <b>El Chico Llama</b> con Prestashop. Desde la compra del hosting hasta la instalación de diferentes plugins y configuración de toda la tienda.</p>
+							<ul class="list-link-icon">
+								<li>
+									<a href="https://www.elchicollama.com" class="link-icon" title="Visita la tienda de El Chico Llama" target="_blank" rel="nofollow">
+										<i class="icon icon-shop"></i>
+										<span>Visita la tienda de El Chico Llama</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<picture class="projects-wrapper__item-mockup">
+							<img src="images/projects/el-chico-llama.png" alt="El Chico Llama">
+						</picture>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="more" class="more-wrapper">
+			<div class="container">
+				<div class="intro-title">
+					<h2 class="primary-title">¿Quieres conocerme un poco más?</h2>
+					<p class="primary-description">Hazlo a través de las siguientes opciones:</p>
+				</div>
+				<ul class="social-list">
+					<li>
+						<a href="https://www.linkedin.com/in/estefania-garcia-jimenez/" title="Linkedin" target="_blank">
+							<i class="icon icon-linkedin"></i>
+							<span>Visita mi perfil en Linkedin</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.estefaniagj.com/pdf/Cv-Estefania.pdf" title="Descarga mi currículum" target="_blank">
+							<i class="icon icon-cv"></i>
+							<span>Descarga mi currículum</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright © - Diseño & Maquetación realizado por Estefanía García Jiménez</p>
+	</footer>
+</body>
+</html>
